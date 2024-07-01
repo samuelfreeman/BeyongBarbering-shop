@@ -57,7 +57,7 @@ const HairStyle: React.FC<HairStyleProps> = ({ setHairStyle, setAmount }) => {
           disallowEmptySelection
           selectionMode="single"
           selectedKeys={[selectedKey]}
-          onSelectionChange={(keys) => handleChange([...keys][0])} // Access the first key from keys set
+          onSelectionChange={(keys: any) => handleChange([...keys][0])} // Access the first key from keys set
         >
           {hairstyles.map((hs) => (
             <DropdownItem key={hs.key}>{hs.value}</DropdownItem>

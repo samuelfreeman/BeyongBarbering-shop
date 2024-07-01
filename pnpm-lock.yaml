@@ -36,7 +36,7 @@ importers:
         specifier: ^5.16.1
         version: 5.16.1
       react:
-        specifier: ^18
+        specifier: ^18.3.1
         version: 18.3.1
       react-dom:
         specifier: ^18
@@ -46,7 +46,7 @@ importers:
         specifier: ^20
         version: 20.14.9
       '@types/react':
-        specifier: ^18
+        specifier: ^18.3.3
         version: 18.3.3
       '@types/react-dom':
         specifier: ^18

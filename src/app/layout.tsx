@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/Header";
 
-const roboto = Roboto({ weight: ['400'], subsets: ['latin'] });
+const inter =Inter ({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Expense application",
@@ -20,7 +20,7 @@ export default function RootLayout({
     <ClerkProvider>
 
       <html lang="en">
-        <body className={roboto.className} >
+        <body className={inter.className} >
           <div className=" bg-yellow-400 rounded-md">
           <Header />
 
