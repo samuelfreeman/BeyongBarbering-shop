@@ -14,7 +14,6 @@ const Guest = () => {
         </div>
 
 
-
         <div className="mt-72">
             <h1>Built and maintained by Samuel Twum Boateng</h1>
         </div>

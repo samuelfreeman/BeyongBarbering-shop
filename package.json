@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browser": {
+    "crypto": false,
+    "stream": false
+  },
   "dependencies": {
     "@clerk/nextjs": "^5.1.6",
     "@neondatabase/serverless": "^0.9.4",
