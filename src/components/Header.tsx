@@ -6,7 +6,7 @@ import { NextUIProvider } from "@nextui-org/react";
 
 
 
-import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import { SignInButton, SignedOut, UserButton } from '@clerk/nextjs'
 import { checkUser } from '@/lib/checkUser';
 
 const Header = async () => {
@@ -14,23 +14,30 @@ const Header = async () => {
 
 
     return (<NextUIProvider><nav className="">
-        <div className=" bg-yellow-400">
+        <div className=" bg-black w-screen">
             <div className=" text-black flex justify-between h-20 items-center ">
 
-            <h2 className='text-3xl font-black pl-6 italic'>Fresh Beyound </h2>
-            <div className='pr-10'>
-                <SignedOut>
-                    <SignedIn />
-                </SignedOut>
-                <SignInButton>
-                    <UserButton />
-                </SignInButton>
-            </div>
-            </div>
-            
+                <h2 className='text-2xl font-black pl-6 italic text-yellow-500'>Fresh Beyound </h2>
+                <div className=''>
+                    <SignedOut>
+                    <div className=" p-2 mr-6 bg-yellow-500 rounded-md   text-black">
+                        <SignInButton />
+                    </div>
+                    </SignedOut>
 
-            < hr className="bg-black h-1"/>
-            
+
+                    <SignInButton>
+                        <div className=" mr-10 ">
+
+                        <UserButton />
+                        </div>
+                    </SignInButton>
+                </div>
+            </div>
+
+
+            <div className="w-screen h-1  bg-white"></div>
+
         </div>
 
     </nav>

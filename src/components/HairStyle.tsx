@@ -45,7 +45,7 @@ const HairStyle: React.FC<HairStyleProps> = ({ setHairStyle, setAmount }) => {
         <DropdownTrigger>
           <Button
             variant="bordered"
-            className="capitalize text-white bg-black rounded-md p-4"
+            className="capitalize text-white text-lg bg-black rounded-md p-4"
           >
             {selectedValue}
           </Button>

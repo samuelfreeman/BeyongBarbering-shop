@@ -8,7 +8,7 @@ const TipAmount = ({ setTipAmount }: any) => {
     };
 
     return (
-        <div className="flex flex-wrap md:flex-nowrap gap-4">
+        <div className="">
             <input onChange={handleChange} className="bg-black text-white  rounded-lg p-5 w-60" type="number" placeholder="Enter your Tip Amount: 0.0" />
         </div>
     );

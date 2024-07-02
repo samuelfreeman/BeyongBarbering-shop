@@ -21,7 +21,7 @@ export default function RootLayout({
 
       <html lang="en">
         <body className={inter.className} >
-          <div className=" bg-yellow-400 rounded-md">
+          <div className="  rounded-md">
           <Header />
 
           <main >
