@@ -9,7 +9,7 @@ const TipAmount = ({ setTipAmount }: any) => {
 
     return (
         <div className="">
-            <input onChange={handleChange} className="bg-black text-white  rounded-lg p-5 w-60" type="number" placeholder="Enter your Tip Amount: 0.0" />
+            <input onChange={handleChange} className="bg-white text-black  rounded-lg p-5 w-60" type="number" placeholder="Enter your Tip Amount: 0.0" />
         </div>
     );
 };

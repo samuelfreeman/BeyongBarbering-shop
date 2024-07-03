@@ -45,7 +45,7 @@ const HairStyle: React.FC<HairStyleProps> = ({ setHairStyle, setAmount }) => {
         <DropdownTrigger>
           <Button
             variant="bordered"
-            className="capitalize text-white text-lg bg-black rounded-md p-4"
+            className="capitalize text-black text-lg bg-white w-28 rounded-md p-4"
           >
             {selectedValue}
           </Button>
@@ -53,7 +53,7 @@ const HairStyle: React.FC<HairStyleProps> = ({ setHairStyle, setAmount }) => {
         <DropdownMenu
           aria-label="Single selection example"
           variant="flat"
-          className="flex flex-col bg-white rounded-lg p-5"
+          className="flex flex-col bg-black text-white rounded-lg p-5 "
           disallowEmptySelection
           selectionMode="single"
           selectedKeys={[selectedKey]}
