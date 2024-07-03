@@ -2,13 +2,18 @@ import { currentUser } from "@clerk/nextjs/server";
 import { db } from "./data";
 
 export const checkUser = async () => {
+
+    //  get current user 
     const user = await currentUser()
+
     if (!user) {
         return null
     }
-    const loggedInUser = await db.user.findUnique({
+
+    //  check if user exists in the database  if not create it
+    const loggedInUser = await db.user.findFirst({
         where: {
-            id: user.id
+            clerkUserId: user.id,
         }
     })
 

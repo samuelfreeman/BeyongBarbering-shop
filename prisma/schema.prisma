@@ -15,7 +15,7 @@ datasource db {
 
 model user {
   id          String    @unique @default(uuid())
-  clerkUserId String?
+  clerkUserId String?   
   name        String?
   telephone   String?
   password    Boolean?

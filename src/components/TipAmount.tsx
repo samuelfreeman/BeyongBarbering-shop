@@ -3,8 +3,9 @@ import React from "react";
 const TipAmount = ({ setTipAmount }: any) => {
     // Inside TipAmount component
 
-    const handleChange = (event: any) => {
-        setTipAmount(event.target.value);
+    const handleChange = (event: any ) => {
+        setTipAmount(event.target.value || 0);
+        
     };
 
     return (
